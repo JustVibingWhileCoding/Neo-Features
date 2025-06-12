@@ -69,6 +69,8 @@
                 content: "Neo" !important;
                 white-space: pre-wrap !important;
                 text-align: center !important;
+                text-justify: center !important;
+                align-content: center !important;
                 font-size: 14px !important;
                 color: color-mix(in srgb, var(--zen-primary-color) 20%, white) !important;
                 position: sticky !important;
