@@ -1,4 +1,4 @@
-@media not (-moz-pref("neo-features-better-essentials-disabled")) {
+@media not (-moz-pref("neo-features-essentials-disabled")) {
     #navigator-toolbox:not([zen-sidebar-expanded="true"]) {
         & #zen-essentials {
             margin-bottom: 10px !important;
@@ -15,16 +15,16 @@
             align-self: center !important;
             justify-self: center !important;
 
-            @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
+            @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
                 max-height: 40px !important;
             }
 
-            @media (-moz-pref("neo-features-better-essentials-keep-expanded")) {
+            @media (-moz-pref("neo-features-essentials-keep-expanded")) {
                 height: 136px !important;
                 max-height: 136px !important;
             }
 
-            @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
+            @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
                 & .tabbrowser-tab:not([selected]) {
                     opacity: 0 !important;
                     visibility: hidden !important;
@@ -45,7 +45,7 @@
             }
         }
 
-        @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
+        @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
 
             /* Expands on hover */
             & .zen-essentials-container:hover {
@@ -60,13 +60,13 @@
     }
 }
 
-@media not (-moz-pref("neo-features-better-essentials-disabled")) {
-    @media not (-moz-pref("neo-features-better-essentials-keep-expanded")) {
+@media not (-moz-pref("neo-features-essentials-disabled")) {
+    @media not (-moz-pref("neo-features-essentials-keep-expanded")) {
         :root:not([zen-sidebar-expanded="true"]) {
 
             /* Essentials pseudo element when no essential tab selected */
             .zen-essentials-container::before {
-                content: "Neo\A Feature" !important;
+                content: "Neo\A Zen" !important;
                 white-space: pre-wrap !important;
                 text-align: center !important;
                 font-size: 11px !important;
