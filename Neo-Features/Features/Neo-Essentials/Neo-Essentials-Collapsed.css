@@ -66,10 +66,10 @@
 
             /* Essentials pseudo element when no essential tab selected */
             .zen-essentials-container::before {
-                content: "Neo\A Zen" !important;
+                content: "Neo" !important;
                 white-space: pre-wrap !important;
                 text-align: center !important;
-                font-size: 11px !important;
+                font-size: 14px !important;
                 color: color-mix(in srgb, var(--zen-primary-color) 90%, white) !important;
                 position: sticky !important;
                 top: 0% !important;
