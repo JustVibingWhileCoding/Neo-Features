@@ -1,0 +1,7 @@
+:root[zen-sidebar-expanded="true"] {
+  #zen-sidebar-foot-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
