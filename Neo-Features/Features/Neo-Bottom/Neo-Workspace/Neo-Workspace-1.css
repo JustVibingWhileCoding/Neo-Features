@@ -3,7 +3,6 @@
     display: flex !important;
     z-index: 9999 !important;
     flex-shrink: 0 !important;
-    top: 0% !important;
     grid-column: 1 / -1 !important;
     grid-row: 1 !important;
     order: -1 !important;
@@ -17,6 +16,14 @@
       position: sticky !important;
       height: 35px !important;
     }
+  }
+  :root:not([zen-sidebar-expanded="true"]) {
+        #zen-workspaces-button {
+          position: absolute !important;
+          padding: 8px 0px !important;
+          min-height: 158px !important;
+          top: 200px !important;
+        }
   }
 }
 

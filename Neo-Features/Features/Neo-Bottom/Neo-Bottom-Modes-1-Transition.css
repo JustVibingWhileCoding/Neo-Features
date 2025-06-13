@@ -21,23 +21,44 @@
                 transition: background-color 0.7s 0.2s ease, backdrop-filter 0.7s 0.2s ease, box-shadow 0.7s 0.2s ease;
             }
         }
-    }
+        
+        :has(#zen-sidebar-foot-buttons:hover) #TabsToolbar::after {
+            opacity: 1.0;
+            transition: opacity 0.7s 2.5s ease;
+        }
 
-    :has(#zen-sidebar-foot-buttons:hover) #TabsToolbar::after {
-        opacity: 1.0;
-        transition: opacity 0.7s 2.5s ease;
+        :has(#zen-sidebar-foot-buttons:not(:hover)) #TabsToolbar::after {
+            transition: opacity 0.7s 0.2s ease;
+        }
     }
-
-    :has(#zen-sidebar-foot-buttons:not(:hover)) #TabsToolbar::after {
-        transition: opacity 0.7s 0.2s ease;
+    
+    :root:not([zen-sidebar-expanded="true"]) {
+        #zen-workspaces-button {
+            transition: top 1.5s 0.1s ease;
+        }
+        #zen-sidebar-foot-buttons:hover {
+            @media not (-moz-bool-pref: "neo-bottom-button-at-bottom") {
+                #zen-workspaces-button {
+                    top: -100% !important;
+                    transition: top 2.5s 2s ease;
+                }
+            }
+            @media (-moz-bool-pref: "neo-bottom-button-at-bottom") {
+                #zen-workspaces-button {
+                    bottom: -100% !important;
+                    transition: top 2.5s 2s ease;
+                }
+            }
+        }
     }
+    
 
     /* Hide all buttons except `#zen-workspaces-button` when NOT hovered */
     #zen-sidebar-foot-buttons:not(:hover)>.toolbarbutton-1:not(#zen-workspaces-button),
     #zen-sidebar-foot-buttons:not(:hover)>.toolbaritem-combined-buttons {
         opacity: 0 !important;
         pointer-events: none !important;
-        transition: opacity 0.5s ease 0.2s;
+        transition: opacity 0.5s ease 0.1s;
     }
 
     /* Show all elements when hovered */
@@ -45,6 +66,6 @@
     #zen-sidebar-foot-buttons:hover>.toolbaritem-combined-buttons {
         opacity: 1 !important;
         pointer-events: all !important;
-        transition: opacity 1.0s ease 2.5s;
+        transition: opacity 1.0s ease 2.2s;
     }
 }
