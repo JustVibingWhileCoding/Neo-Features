@@ -8,9 +8,7 @@
     grid-row: 1 !important;
     order: -1 !important;
     
-    background-color: color-mix(in srgb, var(--zen-primary-color) 70%, #00000020) !important;
-    backdrop-filter: blur(6px) brightness(1.5) saturate(1.5) !important;
-    box-shadow: 0px 0px 3px #00000050 !important;
+    
     margin-top: 0px !important;
   }
   :root[zen-sidebar-expanded="true"] {
@@ -33,13 +31,32 @@
 
   width: calc(100% - var(--zen-element-separation) - 3px);
   align-self: center !important;
-  opacity: 1;
+  opacity: 0;
   
-  height: 34px;
-  top: 85px;
+  height: 35px;
+  top: 87px;
   left: auto !important;
   right: auto !important;
 
   border-radius: var(--zen-button-border-radius) !important;
   visibility: visible !important;
 }
+
+#zen-workspaces-button::after {
+        position: absolute !important;
+        z-index: -1 !important;
+        bottom: -4% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 0%;
+        height: 4px;
+        z-index: -1 !important;
+
+        content: "";
+        background-size: 100% 100% !important;
+        opacity: 0.0;
+
+        border-radius: 10px !important;
+        background: var(--zen-primary-color) !important;
+        transition: opacity 0.4s ease, width 0.4s ease;
+    }

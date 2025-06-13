@@ -1,5 +1,6 @@
 :root[zen-sidebar-expanded="true"] {
   #zen-sidebar-foot-buttons {
+    margin: 5px 0px !important;
     padding: 0px 2px !important;
     display: grid !important;
     
