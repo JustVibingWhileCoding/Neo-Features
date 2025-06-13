@@ -1,5 +1,5 @@
 @import "Neo-Bottom-Modes.css";
-@import "Neo-Buttons/Neo-Bottom-Buttons.css";"
+@import "Neo-Buttons/Neo-Bottom-Buttons.css";
 @import "Neo-Workspace/Neo-Workspace-1.css";
 @import "Neo-Workspace/Neo-Workspace-2.css";
 
@@ -13,8 +13,6 @@
     scroll-behavior: smooth !important;
     
     /* Centers buttons */
-    justify-content: center !important;
-    align-items: center !important;
     align-self: center !important;
     justify-self: center !important;
   }
@@ -31,6 +29,7 @@
     }
   }
 }
+
 
 @media not (-moz-bool-pref: "neo-bottom-button-at-bottom") {
     #zen-sidebar-foot-buttons {

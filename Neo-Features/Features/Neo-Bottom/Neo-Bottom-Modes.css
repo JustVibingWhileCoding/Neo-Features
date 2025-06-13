@@ -1,7 +1,22 @@
 :root[zen-sidebar-expanded="true"] {
   #zen-sidebar-foot-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 0px 2px !important;
+    display: grid !important;
+    
+    grid-auto-rows: auto !important; /* Allows automatic row creation */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important; /* Ensures columns resize */
+    gap: 8px !important;
+    
+    justify-content: center !important; /* Center grid items */
+    align-items: center !important; /* Center vertically */
+    
+    @media (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
+      height: fit-content !important;
+      max-height: 115px !important;
+    }
+    @media not (-moz-bool-pref: "neo-features-bottom-keep-expanded") {
+      max-height: 35px !important;
+    }
   }
 }
+
