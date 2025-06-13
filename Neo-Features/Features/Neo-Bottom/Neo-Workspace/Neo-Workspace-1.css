@@ -7,10 +7,11 @@
     grid-column: 1 / -1 !important;
     grid-row: 1 !important;
     order: -1 !important;
-    
-    
+
+
     margin-top: 0px !important;
   }
+
   :root[zen-sidebar-expanded="true"] {
     #zen-workspaces-button {
       position: sticky !important;
@@ -19,7 +20,7 @@
   }
 }
 
-#TabsToolbar::after{
+#TabsToolbar::after {
   align-self: center !important;
   justify-self: center !important;
   position: absolute !important;
@@ -32,7 +33,7 @@
   width: calc(100% - var(--zen-element-separation) - 3px);
   align-self: center !important;
   opacity: 0;
-  
+
   height: 35px;
   top: 87px;
   left: auto !important;
@@ -43,20 +44,20 @@
 }
 
 #zen-workspaces-button::after {
-        position: absolute !important;
-        z-index: -1 !important;
-        bottom: -4% !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        width: 0%;
-        height: 4px;
-        z-index: -1 !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  bottom: -4% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 0%;
+  height: 4px;
+  z-index: -1 !important;
 
-        content: "";
-        background-size: 100% 100% !important;
-        opacity: 0.0;
+  content: "";
+  background-size: 100% 100% !important;
+  opacity: 0.0;
 
-        border-radius: 10px !important;
-        background: var(--zen-primary-color) !important;
-        transition: opacity 0.4s ease, width 0.4s ease;
-    }
+  border-radius: 10px !important;
+  background: var(--zen-primary-color) !important;
+  transition: opacity 0.4s ease, width 0.4s ease;
+}

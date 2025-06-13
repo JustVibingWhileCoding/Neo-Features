@@ -6,30 +6,30 @@
 @import "Neo-Workspace/Neo-Workspace-2.css";
 
 /* Bottom area general adjustments */
-@media not (-moz-pref("neo-features-better-bottom-disabled")) {
-  #zen-sidebar-foot-buttons {
-    
-    /* Scroll settings */
-    overflow-y: auto !important;
-    scrollbar-width: none !important;
-    scroll-behavior: smooth !important;
-    
-    /* Centers buttons */
-    align-self: center !important;
-    justify-self: center !important;
-  }
-  
-  /* Keep Sidebar Expanded When Customization is Active */
-  body:has(#customization-container:not([hidden])) #zen-sidebar-foot-buttons {
-    max-height: unset !important;
-  }
-  
-  body:has(#customization-container:not([hidden])) {
-    #zen-sidebar-foot-buttons>*:not(#zen-workspaces-button) {
-      opacity: 1 !important;
-      pointer-events: all !important;
+@media not (-moz-pref("neo-features-bottom-disabled")) {
+    #zen-sidebar-foot-buttons {
+
+        /* Scroll settings */
+        overflow-y: auto !important;
+        scrollbar-width: none !important;
+        scroll-behavior: smooth !important;
+
+        /* Centers buttons */
+        align-self: center !important;
+        justify-self: center !important;
     }
-  }
+
+    /* Keep Sidebar Expanded When Customization is Active */
+    body:has(#customization-container:not([hidden])) #zen-sidebar-foot-buttons {
+        max-height: unset !important;
+    }
+
+    body:has(#customization-container:not([hidden])) {
+        #zen-sidebar-foot-buttons>*:not(#zen-workspaces-button) {
+            opacity: 1 !important;
+            pointer-events: all !important;
+        }
+    }
 }
 
 
