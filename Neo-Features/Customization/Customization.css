@@ -28,4 +28,10 @@
 
     /* Tabs selected shadow */
     --tab-selected-shadow: 0 0 0 4px color-mix(in srgb, black 80%, white 2%) !important;
+
+    /* Tab collapsed width */
+    --tab-collapsed-background-width: 40px !important;
+
+    /* Tab min height */
+    --tab-min-height: 40px !important;
 }
