@@ -13,23 +13,23 @@ when having a gradient or a color set*/
 }
 
 :root {
-    --aux-background-color: rgba(0, 0, 0, 0.4) !important;
+    --aux-background-color: var(--browser-bg-dark-color-windows) !important;
 
     @media (-moz-platform: linux) {
-        --aux-background-color: rgba(10, 10, 10, 0.65) !important;
+        --aux-background-color: var(--browser-bg-dark-color-linux) !important;
     }
 
     @media -moz-pref("zen.view.window.scheme", 1) {
-        --aux-background-color: rgba(255, 255, 255, 0.0) !important;
+        --aux-background-color: var(--browser-bg-light-color-windows) !important;
 
         @media (-moz-platform: linux) {
-            --aux-background-color: rgba(255, 255, 255, 0.5) !important;
+            --aux-background-color: var(--browser-bg-light-color-linux) !important;
         }
     }
 
     &[zen-default-theme="true"] {
         
-        --zen-primary-color: rgb(255, 190, 120) !important;
+        --zen-primary-color: var(--default-theme-color) !important;
         
         #zen-browser-background {
             --zen-main-browser-background: var(--aux-background-color) !important;

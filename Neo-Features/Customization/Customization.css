@@ -2,6 +2,17 @@
     --Neo-Elements: light-dark(black, white);
     --Neo-Background: light-dark(white, black);
 
+    /* Default Theme Color */
+    --default-theme-color: rgb(255, 190, 120);
+
+    /*Browser Background - Windows*/
+    --browser-bg-dark-color-windows: rgba(0, 0, 0, 0.4);
+    --browser-bg-light-color-windows: rgba(255, 255, 255, 0.0);
+
+    /*Browser Background - Linux*/
+    --browser-bg-dark-color-linux: rgba(10, 10, 10, 0.65);
+    --browser-bg-light-color-linux: rgba(255, 255, 255, 0.5);
+
     /* General roundness */
     --Roundness: 6px;
 
