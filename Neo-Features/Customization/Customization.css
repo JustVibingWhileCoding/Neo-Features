@@ -1,0 +1,20 @@
+:root {
+    --Neo-Elements: light-dark(black, white);
+    --Neo-Background: light-dark(white, black);
+
+    /* General roundness */
+    --Roundness: 6px;
+
+    /* Top bar height */
+    --zen-toolbar-height: 50px;
+
+    /* Compact mode background color */
+    --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
+
+    /* Tabs color */
+    --tab-selected-bgcolor: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
+    --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 30%, white 2%) !important;
+
+    /* Tabs selected shadow */
+    --tab-selected-shadow: 0 0 0 4px color-mix(in srgb, black 80%, white 2%) !important;
+}
