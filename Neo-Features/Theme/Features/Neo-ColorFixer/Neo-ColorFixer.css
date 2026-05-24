@@ -4,7 +4,7 @@ when having a gradient or a color set*/
 @media not -moz-pref("neo.features.disable") {
     @media not -moz-pref("neo.features.color-fixes.disable") {
         :root:not([zen-default-theme="true"]) {
-            @media not -moz-pref("zen.view.window.scheme", 2) {
+            @media not -moz-pref("zen.view.window.scheme", 2) or -moz-pref(neo.features.color.fixes.allmodes, true) {
                 body:has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
                     #zen-browser-background {
                         --zen-main-browser-background: var(--aux-background-color) !important;
