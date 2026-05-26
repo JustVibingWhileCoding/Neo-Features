@@ -4,32 +4,52 @@ when having a gradient or a color set*/
 @media not -moz-pref("neo.features.disable") {
     @media not -moz-pref("neo.features.color-fixes.disable") {
         
-        /* Transition fixer for the browser background */
-        body:not(:has(#PanelUI-zen-gradient-generator[panelopen="true"])) {
-            .zen-browser-generic-background {
-                &::after {
-                    transition: background 4s ease, opacity 4s ease !important;
-                }
+        /* ---------------------Transition flashbang fixer for the browser background --------------------- */
+        
+        .zen-browser-generic-background {
+            --zen-main-browser-background-old: var(--aux-background-color) !important;
+            &::after {
+                transition: background 2s ease, opacity 2s ease !important;
+            }
+        }
+        .zen-browser-generic-background {
+            &::before {
+                --zen-main-browser-background: var(--aux-background-color) !important;
+                display: none !important;
             }
         }
         
-        :root:not([zen-default-theme="true"]):not([animating-background="true"]) {
-            @media not -moz-pref("zen.view.window.scheme", 2),
-            @media -moz-pref("neo.features.color.fixes.allmodes") {
-                body:has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
-                    #zen-browser-background {
-                        --zen-main-browser-background: var(--aux-background-color) !important;
+        /* --------------------- Automatic background color changer --------------------- */
+        @media not -moz-pref("neo.features.color-fixes.background.always.ebnabled"){
+            :root:not([zen-default-theme="true"]):not([animating-background="true"]) {
+                @media not -moz-pref("zen.view.window.scheme", 2),
+                @media -moz-pref("neo.features.color.fixes.allmodes") {
+                    body:has(#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+                        #zen-browser-background {
+                            --zen-main-browser-background: var(--aux-background-color) !important;
+                        }
                     }
+                }
+            }
+            
+            :root[animating-background="true"]{
+                & #zen-browser-background {
+                    --zen-main-browser-background-old: var(--aux-background-color) !important;
+                    --zen-main-browser-background: var(--aux-background-color) !important;
                 }
             }
         }
 
-        :root[animating-background="true"]{
-            #zen-browser-background {
-                --zen-main-browser-background: var(--aux-background-color) !important;
+
+        /* This is used to change the background color of the browser to a fixed color when the option is enabled */
+        @media -moz-pref("neo.features.color-fixes.background.always.ebnabled"){
+            :root{
+                & #zen-browser-background {
+                    --zen-main-browser-background: var(--aux-background-color) !important;
+                }
             }
         }
-
+        /* --------------------- Light/Dark mode color scheme --------------------- */
         :root {
             --aux-background-color: var(--browser-bg-dark-color-windows) !important;
 
