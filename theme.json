@@ -1,0 +1,15 @@
+{
+    "id": "neo-features",
+    "name": "Neo Features",
+    "description": "Neo Features is a modular CSS enhancement suite that refines UI/UX for Zen browser themes. It separates core functionalities from aesthetics, enabling theme creators to integrate optimized layouts, enhanced media controls, and streamlined navigation with flexibility. \ud83d\udc47",
+    "homepage": "https://github.com/JustVibingWhileCoding/Neo-Features",
+    "style": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Features/main/chrome.css",
+    "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Features/main/readme.md",
+    "image": "",
+    "author": "JustVibingWhileCoding",
+    "version": "1.20.0T",
+    "tags": [],
+    "createdAt": "2025-05-01",
+    "updatedAt": "2026-06-01",
+    "preferences": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Features/main/preferences.json"
+}
