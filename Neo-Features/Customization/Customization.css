@@ -10,7 +10,7 @@
     --browser-bg-light-color-windows: rgba(255, 255, 255, 0.0);
 
     /*Browser Background - Linux*/
-    --browser-bg-dark-color-linux: rgba(10, 10, 10, 0.65);
+    --browser-bg-dark-color-linux: rgba(10, 10, 10, 0.75);
     --browser-bg-light-color-linux: rgba(255, 255, 255, 0.5);
 
     /* General roundness */
@@ -23,7 +23,10 @@
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
 
     /* Tabs color */
-    --tab-selected-bgcolor: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
+    .tab-background{
+        --tab-selected-bgcolor: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
+    }
+   
     --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 30%, white 2%) !important;
 
     /* Tabs selected shadow */
@@ -33,5 +36,5 @@
     --tab-collapsed-background-width: 40px !important;
 
     /* Tab min height */
-    --tab-min-height: 40px !important;
+    --tab-min-height: 38px !important;
 }
