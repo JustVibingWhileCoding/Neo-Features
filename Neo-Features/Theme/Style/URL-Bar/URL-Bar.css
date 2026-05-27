@@ -46,7 +46,8 @@
                 transition: background 1.5s ease !important;
             }
 
-            &:hover {
+            &:hover,
+            &[has-popup-open="true"]{
 
                 #urlbar-input,
                 .urlbar-input-box {
