@@ -17,7 +17,7 @@
     --Roundness: 50px;
 
     /* Top bar height */
-    --zen-toolbar-height: 50px;
+    --zen-toolbar-height: 50px !important;
 
     /* Compact mode background color */
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
