@@ -1,0 +1,82 @@
+@media -moz-pref-set("neo.features.experimental.splitgroups.enabled", "true") {
+    tab-group[split-view-group="true"] {
+
+        --tab-selected-bgcolor: var(--Neo-Tab-Background-Hover) !important;
+        --zen-toolbar-element-bg: var(--Neo-Tab-Background-Hover) !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        padding: 0px !important;
+
+        & .tab-group-container {
+            padding: 4px 4px !important;
+            margin: 0px !important;
+
+            display: flex !important;
+            grid-auto-rows: auto !important;
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+            gap: auto !important;
+
+            overflow-y: scroll !important;
+            overflow-x: hidden !important;
+            min-height: calc(32px) !important;
+            height: calc(32px) !important;
+
+            scrollbar-width: none !important;
+
+            .zen-tab-group-start {
+                display: none !important;
+            }
+
+            transition: border-radius 0.6s ease,
+            max-height 0.4s ease,
+            min-height 0.4s ease,
+            height 0.6s ease !important;
+
+            .tabbrowser-tab {
+                max-height: 32px !important;
+
+                .tab-background {
+                    border-radius: var(--Roundness) !important;
+                }
+
+                &[selected="true"] {
+                    order: -1 !important;
+                }
+
+                --zen-split-view-active-tab-bg: var(--Neo-Tab-Background-Hover) !important;
+            }
+
+            &:has(.tabbrowser-tab[selected="true"]):not(:hover) .tabbrowser-tab {
+                visibility: collapse !important;
+
+                &[selected="true"] {
+                    visibility: visible !important;
+
+                    min-width: 100% !important;
+                }
+            }
+        }
+
+        &:hover {
+            --border-radius-medium: 6px !important;
+
+            .tab-group-container {
+
+                flex-direction: column !important;
+                min-height: fit-content !important;
+                height: calc(32px * 4) !important;
+
+                .tabbrowser-tab {
+                    min-width: 100% !important;
+
+                    visibility: visible !important;
+
+                    &[selected="true"] {
+                        order: -1 !important;
+                        min-width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
