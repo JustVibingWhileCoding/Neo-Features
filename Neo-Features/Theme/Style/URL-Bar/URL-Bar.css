@@ -32,6 +32,10 @@
     transition: min-width 1.5s ease, width 1.5s ease !important;
   }
   
+  & .urlbar-background{
+    transition: background 1.5s ease !important;
+  }
+  
   &:hover{
     #urlbar-input,
     .urlbar-input-box{
