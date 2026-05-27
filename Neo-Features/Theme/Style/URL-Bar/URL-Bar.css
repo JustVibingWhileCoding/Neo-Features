@@ -1,50 +1,70 @@
-.urlbar-input-box{
-  justify-content: center !important;
-  text-align: center !important;
-}
+@media not -moz-pref("neo.theme.disable") {
+    @media not -moz-pref("neo.theme.urlbar.disable") {
+        .urlbar-input-box {
+            justify-content: center !important;
+            text-align: center !important;
+        }
+
+        .urlbar-input-box {
+            justify-content: center !important;
+            text-align: center !important;
+        }
 
 
-#navigator-toolbox[zen-has-hover="true"]{
-  & .urlbar-input-box{
-    justify-content: center !important;
-    text-align: center !important;
-  }
-}
+        #navigator-toolbox[zen-has-hover="true"] {
+            & .urlbar-input-box {
+                justify-content: center !important;
+                text-align: center !important;
+            }
+        }
 
 
 
-:root[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
-  & .identity-box-button, & .urlbar-page-action, & .unified-extensions-item {
-    opacity: 0 !important;
-    height: 100%;
-    visibility: visible !important;
-    margin: 0 !important;
-    position: relative !important;
-    
-    transition: opacity 1s ease !important;
-  }
-  
-  #urlbar-input,
-  .urlbar-input-box{
-    min-width: 100% !important;
-    width: 100% !important;
-    
-    transition: min-width 1.5s ease, width 1.5s ease !important;
-  }
-  
-  & .urlbar-background{
-    transition: background 1.5s ease !important;
-  }
-  
-  &:hover{
-    #urlbar-input,
-    .urlbar-input-box{
-      width: 20% !important;
-      min-width: 20% !important;
+        :root[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
+
+            & .identity-box-button,
+            & .urlbar-page-action,
+            & .unified-extensions-item {
+                opacity: 0 !important;
+                height: 100%;
+                visibility: visible !important;
+                margin: 0 !important;
+                position: relative !important;
+
+                transition: opacity 1s ease !important;
+            }
+
+            #urlbar-input,
+            .urlbar-input-box {
+                min-width: 100% !important;
+                width: 100% !important;
+
+                transition: min-width 1.5s ease, width 1.5s ease !important;
+            }
+
+            & .urlbar-background {
+                transition: background 1.5s ease !important;
+            }
+
+            &:hover {
+
+                #urlbar-input,
+                .urlbar-input-box {
+                    width: 20% !important;
+                    min-width: 20% !important;
+                }
+
+                .identity-box-button,
+                & .urlbar-page-action,
+                & .unified-extensions-item {
+                    opacity: 1 !important;
+                }
+            }
+
+            & #picture-in-picture-button:not([hidden]) {
+                display: flex !important;
+                padding-right: 4px !important;
+            }
+        }
     }
-    
-    .identity-box-button, & .urlbar-page-action, & .unified-extensions-item {
-      opacity: 1 !important;
-    }
-  }
 }
