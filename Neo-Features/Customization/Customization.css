@@ -25,7 +25,7 @@
     /* Tabs color */
     
     --Neo-Tab-Background: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
-    --Neo-Tab-Background-Selected: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
+    --Neo-Tab-Background-Selected: color-mix(in srgb, var(--Neo-Background) 60%, white 2%);
     --Neo-Tab-Background-Hover: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
     --Neo-Glance-Buttons-BG: color-mix(in srgb, var(--Neo-Background) 70%, white 2%);
     
@@ -39,7 +39,6 @@
         
         --tab-selected-shadow: 0 0 3px color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;!important;
         --tab-border-radius: var(--Roundness) !important;
-        --border-radius-medium: var(--Roundness) !important;
     }
    
     --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
