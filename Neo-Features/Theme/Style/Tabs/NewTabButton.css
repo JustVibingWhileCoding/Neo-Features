@@ -1,0 +1,56 @@
+#navigator-toolbox[zen-sidebar-expanded="true"] {
+    --toolbarbutton-hover-background: var(--Neo-Tab-Background-Hover) !important;
+    --toolbarbutton-active-background: var(--Neo-Tab-Background-Selected) !important;
+    --border-radius-medium: var(--Roundness) !important;
+    & #TabsToolbar-customization-target {
+        &::after {
+            width: 100%;
+            bottom: calc(-0.5 * var(--zen-toolbox-padding));
+        }
+        
+        & > :is(toolbaritem, toolbarbutton):not(#search-container):not(#zen-workspaces-button),   
+        & #tabbrowser-arrowscrollbox-periphery > toolbarbutton {
+            width: 100% !important;
+            border-radius: var(--border-radius-medium) !important;
+            padding-left: var(--tab-inline-padding) !important;
+            padding-right: var(--tab-inline-padding) !important;
+
+        & label {
+            display: flex;
+            width: 100%;
+        }
+
+        & image {
+            height: var(--size-item-small);
+            width: var(--size-item-small);
+            padding: 0 !important;
+        }
+
+        &:is([open], [checked]) {
+            background: var(--toolbarbutton-active-background) !important;
+            & image,
+            label {
+                background: transparent !important;
+            }
+        }
+            &:hover {
+                background: var(--toolbarbutton-hover-background);
+                & image,
+                label {
+                    background: transparent !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media -moz-pref("zen.tabs.show-newtab-vertical") {
+  #tabs-newtab-button {
+      --tab-selected-bgcolor: var(--Neo-Tab-Background-Selected) !important;
+    &[in-urlbar] {
+      background: var(--tab-selected-bgcolor) !important;
+      box-shadow: var(--tab-selected-shadow);
+    }
+  }
+}
