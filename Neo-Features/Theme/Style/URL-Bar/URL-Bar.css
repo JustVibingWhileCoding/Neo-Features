@@ -20,18 +20,19 @@
 
 
 
-        :root[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
+        :root:not([zen-has-empty-tab="true"])[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
 
             & .identity-box-button,
             & .urlbar-page-action,
-            & .unified-extensions-item {
+            & .unified-extensions-item,
+            & #zen-copy-url-button {
                 opacity: 0 !important;
                 height: 100%;
-                visibility: visible !important;
+                visibility: collapse !important;
                 margin: 0 !important;
                 position: relative !important;
 
-                transition: opacity 1s ease !important;
+                transition: opacity 1s ease, visibility 1.5s !important;
             }
 
             #urlbar-input,
@@ -47,7 +48,7 @@
             }
 
             &:hover,
-            &[has-popup-open="true"]{
+            &[has-popup-open="true"] {
 
                 #urlbar-input,
                 .urlbar-input-box {
@@ -57,8 +58,10 @@
 
                 .identity-box-button,
                 & .urlbar-page-action,
-                & .unified-extensions-item {
+                & .unified-extensions-item,
+                & #zen-copy-url-button {
                     opacity: 1 !important;
+                    visibility: visible !important;
                 }
             }
 
@@ -67,5 +70,12 @@
                 padding-right: 4px !important;
             }
         }
+    }
+}
+
+:root[zen-has-empty-tab="true"] {
+    & #zen-copy-url-button {
+        display: block !important;
+        visibility: collapse !important;
     }
 }
