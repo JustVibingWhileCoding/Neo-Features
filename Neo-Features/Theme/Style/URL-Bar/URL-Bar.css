@@ -18,7 +18,11 @@
             }
         }
 
-
+        #urlbar {
+            & .urlbar-background {
+                transition: background 1s ease !important;
+            }
+        }
 
         :root:not([zen-has-empty-tab="true"])[zen-single-toolbar="true"] #urlbar:not([breakout-extend="true"]) {
 
@@ -41,10 +45,6 @@
                 width: 100% !important;
 
                 transition: min-width 1.5s ease, width 1.5s ease !important;
-            }
-
-            & .urlbar-background {
-                transition: background 1.5s ease !important;
             }
 
             &:hover,
