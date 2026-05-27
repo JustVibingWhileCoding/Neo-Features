@@ -23,6 +23,14 @@
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
 
     /* Tabs color */
+    
+    --Neo-Tab-Background: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
+    --Neo-Tab-Background-Selected: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
+    --Neo-Tab-Background-Hover: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
+    --Neo-Glance-Buttons-BG: color-mix(in srgb, var(--Neo-Background) 70%, white 2%);
+    
+
+    /*-------------- This section will be moved to the tabs file in the future -------------*/
     .tab-background{
         --zen-toolbar-element-bg: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
         --zen-essential-tab-selected-bg-hover: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
@@ -35,6 +43,8 @@
     }
    
     --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
+
+    /*-------------------------------------------------------------------------------------*/
 
     /* Tabs selected shadow */
 
