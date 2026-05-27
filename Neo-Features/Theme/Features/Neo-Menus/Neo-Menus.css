@@ -4,7 +4,7 @@
   #appMenu-popup,
   panel:not(#notification-popup, #appMenu-notification-popup){
     @media (-moz-platform: linux) {
-      --panel-background: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Glow-Color-1) 5%) !important;
+      --panel-background: color-mix(in srgb, var(--Neo-Background) 60%, transparent) !important;
       --panel-border-color: transparent !important;
 
       border: 0px solid var(--panel-border-color) !important;
@@ -13,7 +13,7 @@
 
   panel:not(#appMenu-popup):is(#notification-popup, #appMenu-notification-popup) {
     @media (-moz-platform: linux) {
-      --panel-background: color-mix(in srgb, var(--Neo-Background) 100%, var(--Neo-Glow-Color-1) 55%) !important;
+      --panel-background: color-mix(in srgb, var(--Neo-Background) 100%, var(--zen-primary-color) 25%) !important;
       --panel-border-color: transparent !important;
     }
   }
@@ -44,13 +44,13 @@
   :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
     &:not([disabled]):hover {
       color: var(--Neo-Elements) !important;
-      background-color: color-mix(in srgb, var(--Neo-Background) 15%, var(--Neo-Glow-Color-1) 60%) !important;
+      background-color: color-mix(in srgb, var(--Neo-Background) 15%, var(--zen-primary-color) 60%) !important;
     }
   }
 
   menu,
   menuitem {
     &:where([_moz-menuactive]:not([disabled])) {
-      background-color: color-mix(in srgb, var(--Neo-Background) 15%, var(--Neo-Glow-Color-1) 60%) !important;
+      background-color: color-mix(in srgb, var(--Neo-Background) 15%, var(--zen-primary-color) 60%) !important;
     }
   }
