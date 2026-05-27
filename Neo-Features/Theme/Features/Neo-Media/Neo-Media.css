@@ -1,5 +1,6 @@
 #zen-media-controls-toolbar:not([hidden])>toolbaritem {
-    transition: border-radius 1s ease,
+    transition: border-radius 0.4s ease,
                 max-height 1s ease,
-                background 1s ease !important;
+                background 0.8s ease,
+                box-shadow 0.3s ease !important;
 }
