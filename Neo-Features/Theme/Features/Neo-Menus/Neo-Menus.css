@@ -4,7 +4,7 @@
   #appMenu-popup,
   panel:not(#notification-popup, #appMenu-notification-popup){
     @media (-moz-platform: linux) {
-      --panel-background: color-mix(in srgb, var(--Neo-Background) 60%, transparent) !important;
+      --panel-background: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Elements) 5%) !important;
       --panel-border-color: transparent !important;
 
       border: 0px solid var(--panel-border-color) !important;
