@@ -37,7 +37,7 @@
         --zen-essential-tab-selected-bg: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
         --tab-selected-bgcolor: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
         
-        --tab-selected-shadow: 0 0 3px color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;!important;
+        --tab-selected-shadow: 0 0 3px color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
         --tab-border-radius: var(--Roundness) !important;
     }
    
