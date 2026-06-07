@@ -52,7 +52,7 @@
                     @media not -moz-pref("neo.features.essentials.keep-expanded") {
                         &::before {
                             order: 0;
-                            content: "Neo\A Zen";
+                            content: "Neo";
                             white-space: pre-wrap;
                             text-align: center;
                             text-justify: center;
