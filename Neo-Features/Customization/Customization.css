@@ -32,16 +32,16 @@
 
     /*-------------- This section will be moved to the tabs file in the future -------------*/
     .tab-background{
-        --zen-toolbar-element-bg: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
-        --zen-essential-tab-selected-bg-hover: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
-        --zen-essential-tab-selected-bg: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
-        --tab-selected-bgcolor: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
+        --zen-toolbar-element-bg: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 20%) !important;
+        --zen-essential-tab-selected-bg-hover: color-mix(in srgb, var(--Neo-Background) 80%, var(--Neo-Elements) 20%) !important;
+        --zen-essential-tab-selected-bg: color-mix(in srgb, var(--Neo-Background) 80%, var(--Neo-Elements) 20%) !important;
+        --tab-selected-bgcolor: color-mix(in srgb, var(--Neo-Background) 80%, var(--Neo-Elements) 20%) !important;
         
-        --tab-selected-shadow: 0 0 3px color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
+        --tab-selected-shadow: 0 0 3px color-mix(in srgb, black, transparent) !important;
         --tab-border-radius: var(--Roundness) !important;
     }
    
-    --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
+    --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 20%) !important;
 
     /*-------------------------------------------------------------------------------------*/
 
@@ -55,8 +55,8 @@
     --tab-min-height: 38px !important;
     
     .urlbar-background {
-        --zen-toolbar-element-bg: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
-        --zen-toolbar-element-bg-hover: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
+        --zen-toolbar-element-bg: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 20%) !important;
+        --zen-toolbar-element-bg-hover: color-mix(in srgb, var(--Neo-Background) 80%, var(--Neo-Elements) 20%) !important;
         --border-radius-medium: var(--Roundness) !important;
     }
 }
