@@ -1,0 +1,28 @@
+@media not -moz-pref("neo.theme.disabled") {
+    @media not -moz-pref("neo.theme.url-bar-disabled") {
+        .urlbar-input-box {
+            justify-content: center !important;
+            text-align: center !important;
+        }
+
+        #urlbar {
+            & .urlbar-background {
+                transition: background 1s ease 200ms,
+                            box-shadow 0.5s ease 200ms,
+                            border 0.5s ease 200ms !important;
+            }
+        }
+
+        .urlbar-background {
+            --zen-toolbar-element-bg: var(--Neo-Background-T2) !important;
+            --zen-toolbar-element-bg-hover: var(--Neo-Background-T1) !important;
+        }
+        
+        #urlbar:not([breakout-extend="true"]) {
+            &:hover{
+                & .urlbar-background {
+                }
+            }
+        }
+    }
+}
