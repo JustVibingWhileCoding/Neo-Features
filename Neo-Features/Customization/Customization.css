@@ -29,6 +29,8 @@
     --Neo-Tab-Background-Selected: color-mix(in srgb, var(--Neo-Background) 60%, white 2%);
     --Neo-Tab-Background-Hover: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
 
+    --Neo-Tab-Shadow: 0 0 3px color-mix(in srgb, black, transparent);
+
     /* Glance buttons color */
     --Neo-Glance-Buttons-BG: color-mix(in srgb, var(--Neo-Background) 70%, white 2%);
 
