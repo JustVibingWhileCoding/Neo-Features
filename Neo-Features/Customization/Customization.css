@@ -39,4 +39,8 @@
 
     /* Tab min height */
     --tab-min-height: 38px !important;
+
+    /* Footer */
+
+    --Workspace-strip-height: 40px !important;
 }
