@@ -15,6 +15,7 @@
 
     /* General roundness */
     --Roundness: 50px;
+    --Roundness-Small: 8px;
 
     /* Top bar height */
     --zen-toolbar-height: 50px !important;
@@ -27,36 +28,15 @@
     --Neo-Tab-Background: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
     --Neo-Tab-Background-Selected: color-mix(in srgb, var(--Neo-Background) 60%, white 2%);
     --Neo-Tab-Background-Hover: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
+
+    /* Glance buttons color */
     --Neo-Glance-Buttons-BG: color-mix(in srgb, var(--Neo-Background) 70%, white 2%);
 
-
-    /*-------------- This section will be moved to the tabs file in the future -------------*/
-    .tab-background {
-        --zen-toolbar-element-bg: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
-        --zen-essential-tab-selected-bg-hover: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
-        --zen-essential-tab-selected-bg: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
-        --tab-selected-bgcolor: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
-
-        --tab-selected-shadow: 0 0 3px color-mix(in srgb, black, transparent) !important;
-        --tab-border-radius: var(--Roundness) !important;
-    }
-
     --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
-
-    /*-------------------------------------------------------------------------------------*/
-
-    /* Tabs selected shadow */
-
 
     /* Tab collapsed width */
     --tab-collapsed-background-width: 40px !important;
 
     /* Tab min height */
     --tab-min-height: 38px !important;
-
-    .urlbar-background {
-        --zen-toolbar-element-bg: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
-        --zen-toolbar-element-bg-hover: color-mix(in srgb, var(--Neo-Background) 60%, white 2%) !important;
-        --border-radius-medium: var(--Roundness) !important;
-    }
 }
