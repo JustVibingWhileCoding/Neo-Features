@@ -3,44 +3,46 @@
 
         /* Window buttons */
         @media not -moz-pref("neo.theme.titlebar.window-buttons.disable") {
-            .titlebar-buttonbox-container {
-                min-width: var(--zen-toolbox-max-width) !important;
-
-                & .titlebar-buttonbox {
+            @media (-moz-platform: linux) {
+                .titlebar-buttonbox-container {
                     min-width: var(--zen-toolbox-max-width) !important;
-                    justify-content: center !important;
-                    margin: auto !important;
 
-                    & toolbarbutton {
-                        padding: 3px !important;
+                    & .titlebar-buttonbox {
+                        min-width: var(--zen-toolbox-max-width) !important;
+                        justify-content: center !important;
+                        margin: auto !important;
+
+                        & toolbarbutton {
+                            padding: 3px !important;
+                        }
                     }
                 }
-            }
 
-            .titlebar-buttonbox-container {
-                min-width: var(--zen-toolbox-max-width) !important;
-
-                & .titlebar-buttonbox {
+                .titlebar-buttonbox-container {
                     min-width: var(--zen-toolbox-max-width) !important;
-                    justify-content: center !important;
-                    margin: auto !important;
 
-                    & toolbarbutton {
-                        padding: 3px !important;
+                    & .titlebar-buttonbox {
+                        min-width: var(--zen-toolbox-max-width) !important;
+                        justify-content: center !important;
+                        margin: auto !important;
+
+                        & toolbarbutton {
+                            padding: 3px !important;
+                        }
                     }
                 }
-            }
 
-            .titlebar-buttonbox-container {
-                min-width: var(--zen-toolbox-max-width) !important;
-
-                & .titlebar-buttonbox {
+                .titlebar-buttonbox-container {
                     min-width: var(--zen-toolbox-max-width) !important;
-                    justify-content: center !important;
-                    margin: auto !important;
 
-                    & toolbarbutton {
-                        padding: 3px !important;
+                    & .titlebar-buttonbox {
+                        min-width: var(--zen-toolbox-max-width) !important;
+                        justify-content: center !important;
+                        margin: auto !important;
+
+                        & toolbarbutton {
+                            padding: 3px !important;
+                        }
                     }
                 }
             }
