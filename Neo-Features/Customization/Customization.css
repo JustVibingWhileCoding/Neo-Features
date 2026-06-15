@@ -17,9 +17,6 @@
     --Roundness: 50px;
     --Roundness-Small: 8px;
 
-    /* Top bar height */
-    --zen-toolbar-height: 50px !important;
-
     /* Compact mode background color */
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
 
@@ -42,5 +39,19 @@
 
     /* Footer */
 
-    --Workspace-strip-height: 40px !important;
+    --Neo-Footer-Indicator-Size-Sidebar-Collapsed: 30px;
+    --Neo-Footer-Indicator-Height-Sidebar-Expanded: 3px;
+    --Neo-Footer-Indicator-Width-Sidebar-Expanded: 80%;
+
+    /* Workspace strip */
+    --Neo-Workspace-Strip-Height-Sidebar-Expanded: 40px;
+    --Neo-Workspace-Strip-Subview-Button-Height-Sidebar-Collapsed: 28px;
+    --Neo-Workspace-Strip-Subview-Button-Separation-Sidebar-Collapsed: 2px;
+
+    /* Toolbar */
+
+    --Neo-Toolbar-height: 50px;
+
+    /* Media */
+    --Neo-Media-Height-Sidebar-Collapsed-Hidden: 30px;
 }
