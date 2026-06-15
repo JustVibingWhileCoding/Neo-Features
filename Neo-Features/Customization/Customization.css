@@ -10,7 +10,7 @@
     --browser-bg-light-color-windows: rgba(255, 255, 255, 0.0);
 
     /*Browser Background - Linux*/
-    --browser-bg-dark-color-linux: rgba(10, 10, 10, 0.75);
+    --browser-bg-dark-color-linux: rgba(20, 20, 20, 0.8);
     --browser-bg-light-color-linux: rgba(255, 255, 255, 0.5);
 
     /* General roundness */
@@ -25,18 +25,14 @@
 
     /* Tabs color */
 
-    --Neo-Tab-Background: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
-    --Neo-Tab-Background-Selected: color-mix(in srgb, var(--Neo-Background) 60%, white 2%);
-    --Neo-Tab-Background-Hover: color-mix(in srgb, var(--Neo-Background) 40%, white 2%);
+    --Neo-Tab-Background: color-mix(in srgb, var(--Neo-Background) 45%, var(--Neo-Elements) 20%, transparent 20%);
+    --Neo-Tab-Background-Selected: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Elements) 10%, transparent 20%);
+    --Neo-Tab-Background-Hover: color-mix(in srgb, var(--Neo-Background) 45%, var(--Neo-Elements) 20%, transparent 20%);
 
     --Neo-Tab-Shadow: 0 0 3px color-mix(in srgb, black, transparent);
 
-    --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
-
     /* Glance buttons color */
     --Neo-Glance-Buttons-BG: color-mix(in srgb, var(--Neo-Background) 70%, white 2%);
-
-    --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
 
     /* Tab collapsed width */
     --tab-collapsed-background-width: 40px !important;
