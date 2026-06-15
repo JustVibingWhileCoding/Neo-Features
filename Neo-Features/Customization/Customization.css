@@ -31,6 +31,8 @@
 
     --Neo-Tab-Shadow: 0 0 3px color-mix(in srgb, black, transparent);
 
+    --tab-hover-background-color: color-mix(in srgb, var(--Neo-Background) 40%, white 2%) !important;
+
     /* Glance buttons color */
     --Neo-Glance-Buttons-BG: color-mix(in srgb, var(--Neo-Background) 70%, white 2%);
 
