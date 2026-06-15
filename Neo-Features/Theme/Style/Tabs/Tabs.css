@@ -1,0 +1,21 @@
+@media not -moz-pref("neo.theme.disabled") {
+    @media not -moz-pref("neo.theme.tab.disabled") {
+        .tabbrowser-tab {
+            & .tab-background {
+                --zen-toolbar-element-bg: var(--Neo-Tab-Background) !important;
+                --zen-essential-tab-selected-bg-hover: var(--Neo-Tab-Background-Hover) !important;
+                --zen-essential-tab-selected-bg: var(--Neo-Tab-Background-Selected) !important;
+                --tab-selected-bgcolor: var(--Neo-Tab-Background-Selected) !important;
+
+                --tab-selected-shadow: var(--Neo-Tab-Shadow) !important;
+                --tab-border-radius: var(--Roundness) !important;
+
+                transition: background 0.4s ease !important;
+            }
+        }
+
+        :root {
+            --tab-hover-background-color: var(--Neo-Tab-Background-Hover) !important;
+        }
+    }
+}

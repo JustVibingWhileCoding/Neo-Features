@@ -14,8 +14,8 @@
         }
 
         .urlbar-background {
-            --zen-toolbar-element-bg: var(--Neo-Background-T2) !important;
-            --zen-toolbar-element-bg-hover: var(--Neo-Background-T1) !important;
+            --zen-toolbar-element-bg: var(--Neo-Tab-Background) !important;
+            --zen-toolbar-element-bg-hover: var(--Neo-Tab-Background-Selected) !important;
         }
         
         #urlbar:not([breakout-extend="true"]) {
