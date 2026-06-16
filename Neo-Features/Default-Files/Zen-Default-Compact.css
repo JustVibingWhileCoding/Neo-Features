@@ -23,7 +23,7 @@
     &::before,
     &::after {
         /*NeoZen: This is just an aesthetic change, to remove the default outline from the background. */
-        outline: 1px solid rgba(255, 255, 255, 0.3) !important;
+        outline: 1px solid rgba(255, 255, 255, 0.1) !important;
         outline-offset: -1px;
         background-attachment: fixed !important;
         background-size: 100vw 100vh !important;
@@ -48,6 +48,7 @@
 
             &::before,
             &::after {
+                box-shadow: inset 0px 0px 10px #ffffff20 !important;
                 background: var(--Neo-Compact-Glass-Background) !important;
             }
         }
