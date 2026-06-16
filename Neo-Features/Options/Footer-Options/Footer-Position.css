@@ -6,8 +6,4 @@
     #TabsToolbar {
         margin-top: 10px !important;
     }
-
-    :root:not([zen-sidebar-expanded="true"]) {
-        --Aux-Footer-Adjustment: calc(var(--Aux-Toolbar-Height) + var(--Neo-Media-Height-Sidebar-Collapsed-Hidden));
-    }
 }
