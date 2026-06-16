@@ -39,7 +39,7 @@
                                 height: var(--Aux-Indicator-Height);
                                 border-radius: 3px;
 
-                                top: calc(var(--Aux-Footer-Height) - 14px);
+                                top: calc(var(--Aux-Footer-Height) - 10px);
                             }
                         }
                     }

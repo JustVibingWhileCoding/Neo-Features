@@ -1,7 +1,7 @@
 :root {
     --zen-toolbar-height: var(--Neo-Toolbar-height) !important;
     --Aux-Toolbar-height: var(--Neo-Toolbar-height);
-    --Aux-Footer-Height: var(--Neo-Workspace-Strip-Height-Sidebar-Expanded);
+    --Aux-Footer-Height: calc(var(--Neo-Workspace-Strip-Height-Sidebar-Expanded) + 15px);
     --Aux-Indicator-Height: var(--Neo-Footer-Indicator-Height-Sidebar-Expanded);
 
     &[zen-compact-mode="true"]{
