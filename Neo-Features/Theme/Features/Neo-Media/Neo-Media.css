@@ -25,7 +25,7 @@
             }
 
             #zen-media-controls-toolbar:not([hidden]) {
-                height: var(--Media-Height) !important;
+                height: var(--Neo-Media-Height-Sidebar-Collapsed-Hidden) !important;
                 order: 9999 !important;
             }
 
@@ -43,7 +43,7 @@
                  * however, the max-height is set to a fixed value, so media controls can grow until 
                  * the height doesn't exceed the value of the max-height */
                 height: fit-content !important;
-                max-height: calc(var(--Media-Height) + 3px) !important;
+                max-height: calc(var(--Neo-Media-Height-Sidebar-Collapsed-Hidden) + 3px) !important;
 
                 transition: max-height 0.8s ease,
                             background 0.8s ease !important;
