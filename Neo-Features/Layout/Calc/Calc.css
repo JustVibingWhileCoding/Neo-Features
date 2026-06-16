@@ -26,17 +26,18 @@
                 --Aux-Media-Height: var(--Neo-Media-Height-Sidebar-Collapsed-Hidden);
             }
 
-            /* This is used to adjust the position of the workspace strip when the sidebar is in collapsed mode */
+            /* This is used to adjust the position of the workspace strip when the sidebar is in collapsed mode when the footer is at the bottom. */
             --Aux-Workspace-Strip-Position-Adjustment: calc(var(--zen-toolbox-padding) + var(--Aux-Media-Height) - 0.1px);
 
             @media -moz-pref("neo.footer.position", "top") {
+                /* This changes the adjustment of the workspace strip when the footer is at the top. */
                 --Aux-Workspace-Strip-Position-Adjustment: var(--Aux-Toolbar-height);
             }
 
-            /* This is used to adjust the height of the footer when the sidebar is in collapsed mode depending on how many workspaces are in the strip */
+            /* This is used to adjust the height of the footer when the sidebar is in collapsed mode depending on how many workspaces are in the strip. */
             --Aux-Footer-Height: calc(var(--Aux-Workspace-Strip-Height) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 20px);
 
-            /* This is used to adjust the position of the footer indicator when the sidebar is in collapsed mode */
+            /* This is used to adjust the position of the footer indicator when the sidebar is in collapsed mode. */
             --Aux-Footer-Indicator-Position: calc(var(--Aux-Workspace-Strip-Height) + var(--Aux-Workspace-Strip-Position-Adjustment) + 10px);
         }
     }
