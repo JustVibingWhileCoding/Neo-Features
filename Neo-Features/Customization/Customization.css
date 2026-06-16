@@ -19,6 +19,8 @@
 
     /* Compact mode background color */
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
+    /* Blur effect */
+    --Neo-Blur-Effect: blur(30px) saturate(120%) brightness(1) contrast(105%);
 
     /* Tabs color */
 
