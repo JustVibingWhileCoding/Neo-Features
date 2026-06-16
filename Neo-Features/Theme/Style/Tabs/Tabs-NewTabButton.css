@@ -1,7 +1,6 @@
 #navigator-toolbox[zen-sidebar-expanded="true"] {
     --toolbarbutton-hover-background: var(--Neo-Tab-Background-Hover) !important;
     --toolbarbutton-active-background: var(--Neo-Tab-Background-Selected) !important;
-    --border-radius-medium: var(--Roundness) !important;
     & #TabsToolbar-customization-target {
         &::after {
             width: 100%;
