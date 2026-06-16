@@ -7,16 +7,25 @@
                         box-shadow 0.3s ease !important;
         }
 
-        :root:not([customizing="true"]):not([zen-sidebar-expanded="true"]) {
-            #navigator-toolbox {
-                &:has(#zen-media-controls-toolbar:not([hidden])) {
-                    padding-bottom: 0px !important;
-                    --Aux-Media-Height: var(--Neo-Media-Height-Sidebar-Collapsed-Hidden);
+        :root:not([zen-sidebar-expanded="true"]) {
+            &:not([zen-compact-mode="true"]):not([customizing="true"]){
+                #navigator-toolbox {
+                    &:has(#zen-media-controls-toolbar:not([hidden])) {
+                        padding-bottom: 0px !important;
+                        --Aux-Media-Height: var(--Neo-Media-Height-Sidebar-Collapsed-Hidden);
+                    }
                 }
             }
-        }
-
-        :root:not([zen-sidebar-expanded="true"]) {
+            
+            &:not([customizing="true"])[zen-compact-mode="true"]{
+                @media -moz-pref('zen.view.compact.hide-tabbar') {
+                    #navigator-toolbox {
+                        &:has(#zen-media-controls-toolbar:not([hidden])) {
+                            --Aux-Media-Height: 220px;
+                        }
+                    }
+                }
+            }
 
             /* Show media controls in collapsed mode and set the direction to column */
             #zen-media-controls-toolbar:not([hidden]),
@@ -112,7 +121,7 @@
                     #zen-media-controls-toolbar:not([hidden])>toolbaritem {
                         position: relative !important;
                         min-height: fit-content !important;
-                        height: fit-content !important;
+                        height: var(--Aux-Media-Height) !important;
                         max-height: fit-content !important;
 
                         background: transparent !important;
