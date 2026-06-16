@@ -20,26 +20,26 @@
 
         #navigator-toolbox {
             & .zen-essentials-container {
-                
+
                 --Neo-Essentials-Max-Height: calc((var(--tab-min-height) + 6px) * var(--Neo-Essentials-Max-Tabs)) !important;
 
                 overflow-y: auto !important;
                 scrollbar-width: none !important;
                 scroll-behavior: smooth !important;
-
-                & .tabbrowser-tab {
-                    transition: opacity 0.4s ease-in-out 200ms, visibility 0.4s ease-in-out 200ms !important;
-                }
             }
 
             @media not -moz-pref("neo.features.essentials.collapsed.disabled") {
                 &:not([zen-sidebar-expanded="true"]) .zen-essentials-container {
                     transition: max-height 0.3s ease-out 100ms, grid-template-columns 0.3s ease-out !important;
-                    
+
                     display: grid !important;
 
                     @media not -moz-pref("neo.features.essentials.keep-expanded") {
                         max-height: calc(var(--tab-min-height) + 4px + 8px) !important;
+                    }
+
+                    & .tabbrowser-tab {
+                        transition: opacity 0.4s ease-in-out 200ms, visibility 0.4s ease-in-out 200ms !important;
                     }
 
                     & .tabbrowser-tab:not([selected]) {
@@ -62,12 +62,12 @@
 
                     &:not(:empty):hover {
                         max-height: calc(var(--Neo-Essentials-Max-Height) + 12px) !important;
-                        
+
                         & .tabbrowser-tab {
                             opacity: 1 !important;
                             visibility: visible !important;
                         }
-                        
+
                         &::before {
                             opacity: 0;
                         }
