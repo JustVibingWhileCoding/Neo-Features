@@ -3,7 +3,7 @@
         findbar {
             position: absolute !important;
             align-self: center !important;
-            min-width: 70% !important;
+            min-width: min(90%, 65rem) !important;
             border-radius: var(--Roundness);
             bottom: 10px !important;
             outline: none !important;
