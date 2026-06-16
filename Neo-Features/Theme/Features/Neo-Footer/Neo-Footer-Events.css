@@ -37,22 +37,22 @@
                                     height: 5px;
                                     width: 70%;
 
-                                    @media not (-moz-pref: "neo.footer.position", "top") {
+                                    @media not -moz-pref("neo.footer.position", "top") {
                                         bottom: calc(var(--Aux-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 5px);
                                     }
 
-                                    @media (-moz-pref: "neo.footer.position", "top") {
+                                    @media -moz-pref("neo.footer.position", "top") {
                                         top: calc(var(--Aux-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 5px);
                                     }
                                 }
 
                                 #zen-workspaces-button {
                                     opacity: 0 !important;
-                                    @media (-moz-bool-pref: "neo-footer-at-bottom") {
+                                    @media not -moz-pref("neo.footer.position", "top") {
                                         bottom: calc(var(--Aux-Footer-Height) * -1);
                                     }
 
-                                    @media not (-moz-bool-pref: "neo-footer-at-bottom") {
+                                    @media -moz-pref("neo.footer.position", "top") {
                                         top: calc(var(--Aux-Footer-Height) * -1);
                                     }
                                 }
