@@ -11,7 +11,7 @@
     &:not([zen-sidebar-expanded="true"]) {
         
         #navigator-toolbox {
-            
+
             /* Workspace-Subview-Counter is inside #navigator-toolbox so we need to calculate the height of the workspace strip here inside
              * the #navigator-toolbox selector to avoid the workspace strip height not working properly when the sidebar is in collapsed mode.
              *
@@ -20,7 +20,14 @@
              */
             --Aux-Workspace-Strip-Height: calc(var(--Aux-Workspace-Subview-Button-Height) * var(--Workspace-Subview-Counter) + 20px);
 
-            --Aux-Workspace-Strip-Position-Adjustment: calc(var(--Aux-Toolbar-height) + var(--Neo-Media-Height-Sidebar-Collapsed-Hidden) - 0.1px);
+            --Aux-Media-Height: 0px;
+
+            &:has(#zen-media-controls-toolbar:not([hidden])){
+                --Aux-Media-Height: var(--Neo-Media-Height-Sidebar-Collapsed-Hidden);
+            }
+
+            /* This is used to adjust the position of the workspace strip when the sidebar is in collapsed mode */
+            --Aux-Workspace-Strip-Position-Adjustment: calc(var(--zen-toolbox-padding) + var(--Aux-Media-Height) - 0.1px);
 
             @media -moz-pref("neo.footer.position", "top") {
                 --Aux-Workspace-Strip-Position-Adjustment: var(--Aux-Toolbar-height);
