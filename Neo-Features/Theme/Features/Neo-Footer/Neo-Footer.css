@@ -105,11 +105,11 @@
                         padding-bottom: 1px !important;
 
                         @media not (-moz-pref("neo.footer.position", "top")) {
-                            bottom: var(--Aux-Workspace-Strip-Adjustment);
+                            bottom: var(--Aux-Workspace-Strip-Position-Adjustment);
                         }
 
                         @media (-moz-pref("neo.footer.position", "top")) {
-                            top: var(--Aux-Workspace-Strip-Adjustment);
+                            top: var(--Aux-Workspace-Strip-Position-Adjustment);
                         }
                     }
                 }
