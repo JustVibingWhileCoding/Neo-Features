@@ -27,12 +27,6 @@
 
             --Aux-Media-Height: 0px;
 
-            &:has(#zen-media-controls-toolbar:not([hidden])){
-                @media not -moz-pref("neo.features.media.disabled") {
-                    --Aux-Media-Height: var(--Neo-Media-Height-Sidebar-Collapsed-Hidden);
-                }
-            }
-
             /* This is used to adjust the position of the workspace strip when the sidebar is in collapsed mode when the footer is at the bottom. */
             --Aux-Workspace-Strip-Position-Adjustment: calc(var(--zen-toolbox-padding) + var(--Aux-Media-Height) - 0.1px);
 
