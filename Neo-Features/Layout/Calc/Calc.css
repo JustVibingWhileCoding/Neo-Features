@@ -2,6 +2,7 @@
     --zen-toolbar-height: var(--Neo-Toolbar-height) !important;
     --Aux-Toolbar-height: var(--Neo-Toolbar-height);
     --Aux-Footer-Height: var(--Neo-Workspace-Strip-Height-Sidebar-Expanded);
+    --Aux-Indicator-Height: var(--Neo-Footer-Indicator-Height-Sidebar-Expanded);
 
     &[zen-compact-mode="true"]{
         --Aux-Toolbar-height: 0px !important;
@@ -12,6 +13,8 @@
 
     &:not([zen-sidebar-expanded="true"]) {
         
+        --Aux-Indicator-Height: var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed);
+
         #navigator-toolbox {
 
             /* Workspace-Subview-Counter is inside #navigator-toolbox so we need to calculate the height of the workspace strip here inside
