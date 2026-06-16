@@ -19,11 +19,12 @@
 
     /* Compact mode background color */
     --Neo-Compact-Glass-Background: linear-gradient(135deg,
-                    rgba(60, 60, 70, 0.6) 0%,
-                    rgba(70, 70, 70, 0.5) 100%) !important;;
+                    rgba(20, 20, 30, 0.6) 0%,
+                    rgba(10, 10, 10, 0.4) 100%) !important;;
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
+    --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Glow-Color-1) 2%, white 2%);
     /* Blur effect */
-    --Neo-Blur-Effect: blur(30px) saturate(120%) brightness(1) contrast(105%);
+    --Neo-Blur-Effect: blur(20px) saturate(120%) brightness(1) contrast(105%);
 
     /* Tabs color */
 
@@ -59,4 +60,11 @@
 
     /* Media */
     --Neo-Media-Height-Sidebar-Collapsed-Hidden: 35px;
+    
+    /* Glow Colors */
+    --Neo-Glow-Color-1: color-mix(in srgb, var(--zen-primary-color) 95%, var(--Neo-Elements) 5%);
+    --Neo-Glow-Color-2: color-mix(in srgb, var(--zen-primary-color) 90%, var(--Neo-Elements) 10%);
+    --Neo-Glow-Color-3: color-mix(in srgb, var(--zen-primary-color) 85%, var(--Neo-Elements) 15%);
+    --Neo-Glow-Color-4: color-mix(in srgb, var(--zen-primary-color) 80%, var(--Neo-Elements) 20%);
+    --Neo-Glow-Color-5: color-mix(in srgb, var(--zen-primary-color) 50%, var(--Neo-Elements) 10%);
 }
