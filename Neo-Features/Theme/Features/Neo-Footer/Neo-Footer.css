@@ -26,8 +26,8 @@
                         opacity 0.5s ease 200ms !important;
                 }
 
-                @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
-                    @media not (-moz-bool-pref: "neo-features-footer-keep-max-height-enabled") {
+                @media not (-moz-bool-pref: "neo.features.workspace-button-hidden") {
+                    @media not (-moz-bool-pref: "neo.features.footer.keep.max-height.enabled") {
                         &:not([customizing=""]):not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
 
                             &>.toolbarbutton-1:not(#zen-workspaces-button),
@@ -57,7 +57,7 @@
 
                     height: var(--Aux-Footer-Height) !important;
                     
-                    @media not (-moz-pref("neo-footer-at-bottom")) {
+                    @media not (-moz-pref("neo.footer.position", "top")) {
                         margin-top: 10px !important;
                     }
                     
@@ -90,7 +90,7 @@
                         position: absolute !important;
                         justify-content: center !important;
 
-                        @media (-moz-bool-pref: "neo-features-footer-collapsed-max-height-enabled") {
+                        @media (-moz-bool-pref: "neo.features.footer.collapsed.max-height.enabled") {
                             overflow-x: unset !important;
                             overflow-y: auto !important;
 
@@ -104,11 +104,11 @@
                         padding-top: 1px !important;
                         padding-bottom: 1px !important;
 
-                        @media (-moz-pref("neo-footer-at-bottom")) {
+                        @media not (-moz-pref("neo.footer.position", "top")) {
                             bottom: var(--Aux-Workspace-Strip-Adjustment);
                         }
 
-                        @media not (-moz-pref("neo-footer-at-bottom")) {
+                        @media (-moz-pref("neo.footer.position", "top")) {
                             top: var(--Aux-Workspace-Strip-Adjustment);
                         }
                     }

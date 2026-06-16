@@ -1,6 +1,6 @@
-@media not (-moz-pref("neo-features-disabled")) {
-    @media not (-moz-pref("neo-features-footer-disabled")) {
-        @media not (-moz-bool-pref: "neo-features-footer-keep-max-height-enabled") {
+@media not (-moz-pref("neo.features.disable")) {
+    @media not (-moz-pref("neo.features.footer.disabled")) {
+        @media not (-moz-bool-pref: "neo.features.footer.keep.max-height.enabled") {
             :root:not([animating-background="true"]):not([customizing=""]) {
                 #navigator-toolbox:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
                     @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
@@ -24,7 +24,7 @@
                                     opacity: 0 !important;
                                 }
 
-                                @media (-moz-bool-pref: "neo-features-footer-expanded-max-height-enabled") {
+                                @media (-moz-bool-pref: "neo.features.footer.expanded.max-height.enabled") {
                                     /* When the footer height is set to a fixed value, the height of the footer is set to that value. */
                                     --Aux-Footer-Height: var(--Neo-Footer-Max-Height) !important;
                                 }
@@ -37,13 +37,12 @@
                                     height: 5px;
                                     width: 70%;
 
-                                    @media (-moz-bool-pref: "neo-footer-at-bottom") {
+                                    @media not (-moz-pref: "neo.footer.position", "top") {
                                         bottom: calc(var(--Aux-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 5px);
                                     }
 
-                                    @media not (-moz-bool-pref: "neo-footer-at-bottom") {
+                                    @media (-moz-pref: "neo.footer.position", "top") {
                                         top: calc(var(--Aux-Footer-Indicator-Position) + var(--Neo-Footer-Indicator-Size-Sidebar-Collapsed) + 5px);
-                                        ;
                                     }
                                 }
 
