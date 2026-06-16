@@ -20,7 +20,7 @@
     /* Compact mode background color */
     --Neo-Compact-Glass-Background: linear-gradient(135deg,
                     rgba(20, 20, 30, 0.6) 0%,
-                    rgba(10, 10, 10, 0.4) 100%) !important;;
+                    rgba(10, 10, 10, 0.5) 100%) !important;;
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
     --Neo-Compact-Background: color-mix(in srgb, var(--Neo-Background) 50%, var(--Neo-Glow-Color-1) 2%, white 2%);
     /* Blur effect */
