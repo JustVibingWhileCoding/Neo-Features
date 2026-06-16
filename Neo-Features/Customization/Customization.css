@@ -18,6 +18,9 @@
     --Roundness-Small: 8px;
 
     /* Compact mode background color */
+    --Neo-Compact-Glass-Background: linear-gradient(135deg,
+                    rgba(60, 60, 70, 0.6) 0%,
+                    rgba(70, 70, 70, 0.5) 100%) !important;;
     --compact-bg-color: color-mix(in srgb, var(--Neo-Background) 50%, white 2%);
     /* Blur effect */
     --Neo-Blur-Effect: blur(30px) saturate(120%) brightness(1) contrast(105%);
