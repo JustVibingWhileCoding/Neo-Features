@@ -16,7 +16,7 @@
             --Aux-Workspace-Strip-Position-Adjustment: calc(var(--Aux-Toolbar-height) + var(--Neo-Media-Height-Sidebar-Collapsed-Hidden));
 
             @media -moz-pref("neo.footer.position", "top") {
-                --Aux-Workspace-Strip-Position-Adjustment: calc(var(--Aux-Toolbar-height) + var(--Neo-Media-Height-Sidebar-Collapsed-Hidden) + var(--Neo-Footer-Indicator-Height-Sidebar-Expanded));
+                --Aux-Workspace-Strip-Position-Adjustment: var(--Aux-Toolbar-height);
             }
         }
     }
