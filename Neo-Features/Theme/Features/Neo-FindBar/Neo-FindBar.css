@@ -11,9 +11,7 @@
 
 
 
-            background: linear-gradient(135deg,
-                    rgba(60, 60, 70, 0.6) 0%,
-                    rgba(70, 70, 70, 0.5) 100%) !important;
+            background: var(--Neo-Compact-Glass-Background) !important;
 
             backdrop-filter: var(--Neo-Blur-Effect) !important;
             /* Safari support */
