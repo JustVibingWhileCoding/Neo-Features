@@ -26,6 +26,9 @@
     /* Blur effect */
     --Neo-Blur-Effect: blur(20px) saturate(120%) brightness(1) contrast(105%);
 
+    
+    --Neo-Popup-BG-Color: color-mix(in srgb, var(--Neo-Background) 60%, var(--Neo-Elements) 10%, transparent);
+
     /* Tabs color */
 
     --Neo-Tab-Background: color-mix(in srgb, var(--Neo-Background) 30%, var(--Neo-Elements) 10%, transparent 20%);
