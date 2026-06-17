@@ -42,7 +42,8 @@
  *gradient generator is enabled and the background opacity is set to the lowest value
  *Looks like the blur effect is working without pseudo elements in the background for now
  *I'll keep this like that because there is no reason to use pseudo elements for this */
-#main-window:has(#PanelUI-zen-gradient-generator-view >#PanelUI-zen-gradient-generator-controls >#PanelUI-zen-gradient-colors-wrapper >#PanelUI-zen-gradient-opacity-wrapper >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]) {
+#main-window:has(#PanelUI-zen-gradient-generator-view >#PanelUI-zen-gradient-generator-controls >#PanelUI-zen-gradient-colors-wrapper >#PanelUI-zen-gradient-opacity-wrapper >#PanelUI-zen-gradient-generator-opacity[style="--zen-thumb-height: 40px; --zen-thumb-width: 10px;"]),
+:root[zen-default-theme="true"] {
     .zen-toolbar-background {
         @media -moz-pref('zen.theme.acrylic-elements') {
 
