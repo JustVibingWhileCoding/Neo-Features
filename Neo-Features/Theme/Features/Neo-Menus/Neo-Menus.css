@@ -17,6 +17,29 @@
             }
         }
 
+        /* NeoZen: Looks like using the media query for the linux platform can change the background color and the border color of the popup menus,
+         * without changing it for the other platforms, so I moved the background color and the border color to be inside the media query for linux */
+        
+        /* This only works in the stable version of Zen browser, twilight version needs the new code above */
+         menupopup,
+        #appMenu-popup,
+        panel:not(#notification-popup, #appMenu-notification-popup) {
+            @media (-moz-platform: linux) {
+                --panel-background: color-mix(in srgb, var(--Neo-Background) 65%, var(--Neo-Elements) 5%) !important;
+                --panel-border-color: transparent !important;
+
+                border: 0px solid var(--panel-border-color) !important;
+            }
+        }
+
+        panel:not(#appMenu-popup):is(#notification-popup, #appMenu-notification-popup) {
+            @media (-moz-platform: linux) {
+                --panel-background: color-mix(in srgb, var(--Neo-Background) 100%, var(--zen-primary-color) 25%) !important;
+                --panel-border-color: transparent !important;
+            }
+        }
+        /*--------------------------------------------------------------------------------------------------*/
+
         menu,
         menuitem {
             &:where([_moz-menuactive]:not([disabled])) {
