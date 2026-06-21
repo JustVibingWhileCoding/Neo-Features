@@ -15,7 +15,7 @@
 
     {
         "type": "text",
-        "label": "**NOTE: Not all the options are available here, I'm working to add them all soon.**",
+        "label": "**NOTE: Not all the options are available here, some of them are still in development, I'm working to add them all soon thanks for your patience.**",
         "margin": "10px 0 15px 0",
         "size": "20px"
     },
@@ -64,5 +64,146 @@
         "type": "checkbox",
         "property": "neo.theme.disabled",
         "label": "Disable only the styling of the theme not the features."
+    },
+
+    {
+        "type": "separator",
+        "label": "Feature: Neo Color Fixer"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.color-fixer.disabled",
+        "label": "Disable the correction of the color scheme, if you disable that, the theme will not be able to override the color scheme."
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.color-fixer.background.fixed.enabled",
+        "label": "Fix the background color of the browser to the default color based on the color scheme."
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.color-fixer.force.allmodes",
+        "label": "Force the color scheme to be applied to all modes, including the first mode of the gradient generator."
+    },
+
+    {
+        "type": "separator",
+        "label": "Feature: Neo Essentials"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.essentials.disabled",
+        "label": "Disable Neo Essentials features, the essentials tab area won't expand on hover and will keep it's original size and behavior."
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.essentials.collapsed.disabled",
+        "label": "Disable Neo Essentials when the sidebar is in collapsed mode."
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.essentials.expanded.disabled",
+        "label": "Disable Neo Essentials when the sidebar is in expanded mode."
+    },
+
+    {
+        "type": "separator",
+        "label": "Feature: Neo Findbar"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.find-bar.disabled",
+        "label": "Disable Neo Findbar feature, the find bar will return to the default position and style of the browser."
+    },
+
+    {
+        "type": "separator",
+        "label": "Feature: Neo Footer"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.footer.disabled",
+        "label": "Disable the footer, the footer will return to the default position and style of the browser."
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.footer.fit-to-content",
+        "label": "The footer area will expand to fit the content inside it, this only works when the sidebar is in expanded mode."
+    },
+
+    {
+        "type":"separator",
+        "label": "Feature: Neo Glance"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.glance.disabled",
+        "label": "This feature fix and issue when transparent tabs are enabled, I recommend you to not disable this feature."
+    },
+
+    {
+        "type": "separator",
+        "label": "Feature: Neo Media"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.media.disabled",
+        "label": "Disable the media controls, the media controls will return to the default position and style of the browser."
+    },
+
+    {
+        "type": "separator",
+        "label": "Feature: Neo Menus"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.menus.disabled",
+        "label": "Disable the menus customization for linux platform, the menus will return to the default style of the browser."
+    },
+
+    {
+        "type": "separator",
+        "label": "Feature: Neo Search"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.search.disabled",
+        "label": "This will disable all the features related to the search bar."
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.search.shade.disabled",
+        "label": "This will disable icon hiding on the search bar."
+    },
+
+    {
+        "type": "separator",
+        "label": "Feature: Neo Sidebar Panel"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.sidebar.panel.disabled",
+        "label": "This will disable all the features related to the sidebar panel."
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.sidebar.panel.autohide.disabled",
+        "label": "This will disable the autohide feature of the sidebar panel."
     }
 ]
