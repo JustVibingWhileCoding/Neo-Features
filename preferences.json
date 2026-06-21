@@ -1,0 +1,31 @@
+[
+    {
+        "type": "text",
+        "label": "**Neo Features**",
+        "margin": "10px 0 15px 0",
+        "size": "40px"
+    },
+
+    {
+        "type": "separator",
+        "label": ""
+    },
+    
+    {
+        "type": "text",
+        "label": "**Features**",
+        "margin": "10px 0 15px 0",
+        "size": "20px"
+    },
+
+    {
+        "type": "separator",
+        "label": "General"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.features.disabled",
+        "label": "Disable all the features."
+    }
+]
