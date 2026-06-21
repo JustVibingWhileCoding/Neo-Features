@@ -3,7 +3,7 @@
         @media not (-moz-bool-pref: "neo.features.footer.keep.max-height.enabled") {
             :root:not([animating-background="true"]):not([customizing=""]) {
                 #navigator-toolbox:not(:has(#zen-workspaces-button> .subviewbutton:only-child)) {
-                    @media not (-moz-bool-pref: "neo-features-workspace-button-hidden") {
+                    @media not (-moz-bool-pref: "neo.features.workspace.button.hidden") {
 
                         #zen-sidebar-foot-buttons:hover:not(:has(#zen-workspaces-button:hover)),
                         #zen-sidebar-foot-buttons:has(toolbarbutton[open="true"]) {
