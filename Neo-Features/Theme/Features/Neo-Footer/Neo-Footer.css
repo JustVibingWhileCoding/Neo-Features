@@ -65,6 +65,7 @@
                     @media -moz-pref("neo.features.footer.fit-to-content") {
                         height: fit-content !important;
                         max-height: var(--Aux-Footer-Height) !important;
+                        overflow: clip !important;
                     }
                     
                     @media not (-moz-pref("neo.footer.position", "top")) {
@@ -77,7 +78,7 @@
                         top: 0% !important;
                         grid-column: 1 / -1 !important;
                         grid-row: 1 !important;
-                        order: -1 !important;
+                        order: -2 !important;
 
                         width: 100% !important;
                         position: sticky !important;
