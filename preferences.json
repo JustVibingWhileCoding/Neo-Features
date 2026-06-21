@@ -7,6 +7,20 @@
     },
 
     {
+        "type": "text",
+        "label": " ",
+        "margin": "10px 0 15px 0",
+        "size": "40px"
+    },
+
+    {
+        "type": "text",
+        "label": "**NOTE: Not all the options are available here, I'm working to add them all soon.**",
+        "margin": "10px 0 15px 0",
+        "size": "20px"
+    },
+
+    {
         "type": "separator",
         "label": ""
     },
@@ -27,5 +41,28 @@
         "type": "checkbox",
         "property": "neo.features.disabled",
         "label": "Disable all the features."
+    },
+
+    {
+        "type": "separator",
+        "label": ""
+    },
+
+    {
+        "type": "text",
+        "label": "**Theme**",
+        "margin": "10px 0 15px 0",
+        "size": "20px"
+    },
+
+    {
+        "type": "separator",
+        "label": "General"
+    },
+
+    {
+        "type": "checkbox",
+        "property": "neo.theme.disabled",
+        "label": "Disable only the styling of the theme not the features."
     }
 ]
