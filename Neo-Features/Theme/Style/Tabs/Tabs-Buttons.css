@@ -1,0 +1,29 @@
+@media not -moz-pref("neo.theme.disable") {
+    @media not -moz-pref("neo.theme.tabs.disable") {
+        @media not -moz-pref("neo.theme.tabs.buttons.disable") {
+
+            /* Fix colors for the tab icons when tabs are not in expanded mode */
+            .tab-icon-overlay {
+                #tabbrowser-tabs[orient="vertical"]:not([expanded]) &:not([crashed]),
+                &:not([crashed]) {
+                    &:is([soundplaying], [muted], [activemedia-blocked]) {
+                        &[selected] {
+                            background: var(--Neo-Subelements-BG) !important;
+                            fill: var(--Neo-Subelements-TXT) !important;
+                        }
+                    }
+                }
+            }
+
+            /* Fix colors for the close button when tabs are not in expanded mode */
+            #tabbrowser-tabs[orient="vertical"] {
+                &:not([expanded]) {
+                    & .tab-close-button {
+                        background: var(--Neo-Subelements-BG) !important;
+                        fill: var(--Neo-Subelements-TXT) !important;
+                    }
+                }
+            }
+        }
+    }
+}
