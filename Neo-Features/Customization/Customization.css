@@ -41,7 +41,11 @@
     --Neo-Tab-Background-Hover: color-mix(in srgb, var(--Neo-Background) 30%, var(--Neo-Elements) 10%, transparent 20%);
 
     --Neo-Tab-Shadow: 0 0 3px color-mix(in srgb, black, transparent);
-
+    /* Subelements Background */
+    
+    --Neo-Subelements-BG: color-mix(in srgb, var(--Neo-Background) 20%, var(--Neo-Elements) 80%);
+    --Neo-Subelements-TXT: color-mix(in srgb, var(--Neo-Background) 80%, var(--Neo-Elements) 20%);
+    
     /* Glance buttons color */
     --Neo-Glance-Buttons-BG: color-mix(in srgb, var(--Neo-Background) 70%, white 2%);
 
